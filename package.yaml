@@ -1,0 +1,24 @@
+name:                polyrecords
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/litoprobka/polyrecords#readme
+license:             BSD2
+author:              Litoprobka
+#maintainer:          example@example.com
+copyright:           2021 Litoprobka
+#category:
+extra-source-files:
+- README.md
+
+default-extensions:
+- GHC2021
+
+dependencies:
+  - base
+  - lens
+
+library:
+  source-dirs: src
+  ghc-options:
+    - -W
