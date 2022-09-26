@@ -21,7 +21,7 @@ data Record r where
     RNil :: Record '[]
     RCons :: forall (name :: Symbol) a r. 
         FieldType name (Record r) ~ MissingField
-         a -> Record r -> Record (name := a : r)
+        => a -> Record r -> Record (name := a : r)
 
 
 type family FieldType (name :: Symbol) r where
